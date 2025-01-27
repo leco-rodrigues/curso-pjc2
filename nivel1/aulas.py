@@ -68,7 +68,8 @@
 #     print("Mais uma pra você entender")
 #
 # print("Continuação...")
-
+#
+#
 # "colegionaval.py"
 # nota = 6.0
 # media_alta = 7
