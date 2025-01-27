@@ -14,7 +14,7 @@
 # --------------------- Aula 1
 
 
-#"Valores, Memória, Tipos de Dados e Variáveis"
+# "Valores, Memória, Tipos de Dados e Variáveis"
 # print(7)
 # print(7.8)
 # print("texto")
@@ -58,4 +58,41 @@
 # ------------ Aula 2
 
 
-#""
+# "condicoes.py"
+# numero = 10
+# if numero > 15 or numero < 30:
+#     print("Olá Mundo")
+#     print("também estou no if")
+# else:
+#     print("Xau Mundo")
+#     print("Mais uma pra você entender")
+#
+# print("Continuação...")
+
+# "colegionaval.py"
+# nota = 6.0
+# media_alta = 7
+# media_baixa = 5
+#
+# if nota >= media_alta:
+#     print("Aprovado direto!😎")
+# elif nota >= media_baixa:
+#     print("Fazer prova final!")
+#     nota_pf = 4.0
+#     if nota_pf >= media_baixa:
+#         print("Aprovado na Prova Final")
+#     else:
+#         print("Precisa fazer a recuperação final")
+#         nota_rf = 5.0
+#     if nota_rf >= media_baixa:
+#         print("Aprovado na recuperação")
+#     else:
+#         print("REPROVADO!")
+# else:
+#     print("Fazer recuperação final 😱")
+#     nota_rf = 5.0
+#     if nota_rf >= media_baixa:
+#         print("Aprovado na recuperação")
+#     else:
+#         print("REPROVADO!")
+# --------------------------- Aula 3
