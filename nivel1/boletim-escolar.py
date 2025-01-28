@@ -46,3 +46,4 @@ for bimestre in range(4):
     for i, disciplina in enumerate(disciplinas):
         print(f'{disciplina} - Nota: {notas[bimestre][i]}, Faltas: {faltas[bimestre][i]}')
     print() # Linha em branco para separar os bimestres
+# --------- [Exercício] Aula 5
