@@ -134,3 +134,26 @@
 # print(disciplinas[3])
 # print(notas[3])
 # --------------- Aula 5
+
+
+# "repeticoes.py"
+# alunos = ("Hallison", "Maria", "José", "Ana")
+# for nome in alunos:
+#     print(nome)
+#     print("----------")
+# print("Acabaram as repetições")
+#
+# for numero in range(3, 10, 2)
+#     print(numero)
+#
+# for idx in range(len(alunos)):
+#     print(alunos[idx])
+#
+#
+# "disciplinas.py"
+# disciplinas = ("matemática", "português", "filosofia", "história", "física", "geografia", "química", "biologia")
+# notas = [7.8, 8.2, 9.5, 5.7, 9.8, 10, 6.4, 7.0]
+#
+# for i in (len(notas)):
+#     print(f"A nota da {disciplinas[i]} foi {notas[i]}")
+# ------------------------------------------------------- Aula 6
