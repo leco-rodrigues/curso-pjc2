@@ -157,3 +157,33 @@
 # for i in (len(notas)):
 #     print(f"A nota da {disciplinas[i]} foi {notas[i]}")
 # ------------------------------------------------------- Aula 6
+
+
+# "enquanto.py"
+# nota = float(input("Digite um valor de nota: "))
+# if nota >= 0 and nota <= 10:
+#     print(nota)
+# else:
+#     print("nota inválida")
+# while nota < 0 or nota > 10:
+#     nota = float(input("Digite um valor VÁLIDO de nota: "))
+#     print("vou repetir")
+# print(nota)
+#
+#
+# "exenquanto.py"
+# n = 10
+# while n >= 0:
+#     if n % 2 == 1:
+#         n = n - 1
+#         continue
+#     print(n)
+#     n = n - 1
+# 
+# n = 10
+# while n >= 0:
+#     print(n)
+#     n = n - 1
+#     if n == 5:
+#         break
+# ------------- Aula 7
