@@ -1,4 +1,4 @@
-# Definir se o voto de uma pessoa é "obrigatório", "facultativo" ou "proibido" baseado na sua idade
+# Definir se o voto de uma pessoa é "obrigatório", "facultativo" ou "proibido", baseado na sua idade
 idade = 70
 
 if 71 > idade >= 18:

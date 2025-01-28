@@ -1,19 +1,18 @@
 # Converter "notas numéricas" em "notas conceituais" ("A", "B", "C", "D", e "F")
-    
     # Função para mensagem de erro
 def mensagem_erro(msg = 'Entrada inválida'):
     print(msg)
 
+    # Função para decidir continuar executando o programa ou não
 def sim_não():
     while True:
         continuar = input('Deseja continuar (s/n)? ')
         if continuar.lower().strip() in ['s', 'sim']:
             break
         elif continuar.lower().strip() in ['n', 'não']:
-            print('Encerrando o programa')
-            exit()
+            raise SystemExit('Encerrando o programa')
         else:
-            mensagem_erro()
+            mensagem_erro('Digite "Sim" ou "Não"')
 
     # Função para conversão de notas
 def nota_conceitual(nota):
@@ -38,15 +37,14 @@ def nota_conceitual(nota):
 def prova_final():
     notas = ['A', 'B', 'C', 'D', 'F']
     while True:
-        nota_pf = 'F' # provisória
+        nota_pf = 'A' # provisória
         if nota_pf in notas:
             if nota_pf in [notas[0], notas[1], notas[2], notas[3]]:
-                print('Aprovado na prova final!')
-                break
+                raise SystemExit('Aprovado na prova final!')
             else:
-                return False
+                return
         else:
-            mensagem_erro()
+            mensagem_erro('Digite uma nota válida')
 
     # Função para nota de recuperação
 def recuperação():
@@ -55,13 +53,11 @@ def recuperação():
         nota_r = 'A' # provisória
         if nota_r in notas:
             if nota_r == notas[0] or nota_r == notas[1] or nota_r == notas[2] or nota_r == [3]:
-                print('Aprovado na recuperação!')
-                break
+                raise SystemExit('Aprovado na recuperação!')
             else:
-                print('Reprovado!')
-                break
+                SystemExit('Reprovado!')
         else:
-            mensagem_erro()
+            mensagem_erro('Digite uma nota válida')
 
    # Nota e médias (provisórias)
 nota = 6
@@ -82,5 +78,5 @@ if 0 <= nota <= 10:
             sim_não()
             recuperação()
 else:
-    mensagem_erro()
+    mensagem_erro('Digite uma nota válida')
 # ---------------- [Exercício] Aula 3

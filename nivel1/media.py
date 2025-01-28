@@ -1,4 +1,4 @@
-# Exibir a media "simples", "harmônica" e "ponderada" entre dois números
+# Exibir a media "simples", "harmônica" e "ponderada", entre dois números
 n1 = 26
 n2 = 25
 p1 = 1
