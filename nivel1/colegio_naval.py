@@ -88,4 +88,4 @@ else:
     print('Fazer recuperação!')
     sim_não()
     recuperação(media_baixa)
-# -------------------[Exercício] Aula 3
+# -------------------------- [Exercício] Aula 3
