@@ -35,7 +35,7 @@ def nota_conceitual(nota, notas):
     # Nota da prova final
 def prova_final(notas):
     while True:
-        nota_pf = 'A' # provisória
+        nota_pf = 'F' # provisória
         if nota_pf in notas:
             if nota_pf in [notas[0], notas[1], notas[2], notas[3]]:
                 raise SystemExit('Aprovado na prova final!')
@@ -47,22 +47,23 @@ def prova_final(notas):
     # Nota de recuperação
 def recuperação(notas):
     while True:
-        nota_r = 'A' # provisória
+        nota_r = 'F' # provisória
         if nota_r in notas:
-            if nota_r == notas[0] or nota_r == notas[1] or nota_r == notas[2] or nota_r == [3]:
+            if nota_r != 'F':
                 raise SystemExit('Aprovado na recuperação!')
             else:
-                SystemExit('Reprovado!')
+                raise SystemExit('Reprovado')
         else:
             mensagem_erro('Digite uma nota válida')
 
    # Nota e médias (provisórias)
 nota = 6
-media_alta = 8
+media_alta = 9
 media_baixa = 6
+notas = ['A', 'B', 'C', 'D', 'F']
 
 if 0 <= nota <= 10:
-    nota = nota_conceitual(nota)
+    nota = nota_conceitual(nota, notas)
     print(f'O aluno tirou nota {nota} na prova!')
     notas = ['A', 'B', 'C', 'D', 'F']
     if nota in [notas[0], notas[1]]:
@@ -70,10 +71,10 @@ if 0 <= nota <= 10:
     elif nota in [notas[2], notas[3]]:
         print('Fazer prova final!')
         sim_não()
-        if not prova_final():
+        if not prova_final(notas):
             print('Fazer recuperação!')
             sim_não()
-            recuperação()
+            recuperação(notas)
 else:
     mensagem_erro('Digite uma nota válida')
-# ---------------- [Exercício] Aula 3
+# ----------------------------------------- [Exercício] Aula 3
