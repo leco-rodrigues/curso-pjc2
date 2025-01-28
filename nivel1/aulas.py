@@ -97,3 +97,18 @@
 #     else:
 #         print("REPROVADO!")
 # --------------------------- Aula 3
+
+
+# "io.py"
+# palvra = input("Digite uma palvra: ")
+# print(palavra)
+#
+# nota = input("Digite uma nota: ")
+# nota = float(nota)
+# media = float(input("Digite a média: "))
+#
+# if nota >= media:
+#    print("Aprovado com nota", nota, "(média é", media, ")")
+# else:
+#    print(f'Reprovado com a nota {nota} (média é {media})')
+# ---------------------------------------------------------- Aula 4
