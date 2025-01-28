@@ -3,7 +3,7 @@
 def mensagem_erro(msg = 'Entrada inválida'):
     print(msg)
 
-    # Dado de texto
+    # Para inserir textos
 def inserir_texto(pergunta = ''):
     while True:
         nome = input(pergunta).strip()
@@ -11,8 +11,8 @@ def inserir_texto(pergunta = ''):
             return nome
         mensagem_erro()
 
-    # Dado numérico
-def inserir_numero(pergunta = ''):
+    # Para inserir números
+def inserir_numero(pergunta = 'Texto: '):
     while True:
         num = input(pergunta).strip()
         if num and all(char.isnumeric() or char.isspace() for char in num):
@@ -46,3 +46,4 @@ for bimestre in range(4):
     for i, disciplina in enumerate(disciplinas):
         print(f'{disciplina} - Nota: {notas[bimestre][i]}, Faltas: {faltas[bimestre][i]}')
     print() # Linha em branco para separar os bimestres
+# --------- [Exercício] Aula 5
