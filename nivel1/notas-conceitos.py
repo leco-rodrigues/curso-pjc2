@@ -1,9 +1,9 @@
 # Converter "notas numéricas" em "notas conceituais" ("A", "B", "C", "D", e "F")
-    # Função para mensagem de erro
+    # Mensagem de erro
 def mensagem_erro(msg = 'Entrada inválida'):
     print(msg)
 
-    # Função para decidir continuar executando o programa ou não
+    # Continuar executando o programa ou não
 def sim_não():
     while True:
         continuar = input('Deseja continuar (s/n)? ')
@@ -14,9 +14,8 @@ def sim_não():
         else:
             mensagem_erro('Digite "Sim" ou "Não"')
 
-    # Função para conversão de notas
-def nota_conceitual(nota):
-    notas = ['A', 'B', 'C', 'D', 'F']
+    # Conversão de notas
+def nota_conceitual(nota, notas):
     if nota > 8:
         nota = notas[0]
         return nota
@@ -33,9 +32,8 @@ def nota_conceitual(nota):
         nota = notas[4]
         return nota
 
-    # Função para nota da prova final
-def prova_final():
-    notas = ['A', 'B', 'C', 'D', 'F']
+    # Nota da prova final
+def prova_final(notas):
     while True:
         nota_pf = 'A' # provisória
         if nota_pf in notas:
@@ -46,9 +44,8 @@ def prova_final():
         else:
             mensagem_erro('Digite uma nota válida')
 
-    # Função para nota de recuperação
-def recuperação():
-    notas = ['A', 'B', 'C', 'D', 'F']
+    # Nota de recuperação
+def recuperação(notas):
     while True:
         nota_r = 'A' # provisória
         if nota_r in notas:

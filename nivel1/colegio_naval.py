@@ -1,9 +1,9 @@
 # Definir se um aluno está aprovado ou não, baseado em sua nota
-    # Função para mensagem de erro
+    # Mensagem de erro
 def mensagem_erro(msg = 'Entrada inválida'):
     print(msg)
 
-    # Função para decidir continuar executando o programa ou não
+    # Continuar executando o programa ou não
 def sim_não():
     while True:
         continuar = input('Deseja continuar (s/n? ')
@@ -14,8 +14,8 @@ def sim_não():
         else:
             mensagem_erro('Digite "Sim" ou "Não"')
 
-    # Função para nota da prova final
-def prova_final():
+    # Nota da prova final
+def prova_final(media_baixa):
     while True:
         try:
             nota_pf = float(input('Nota da prova final: '))
@@ -29,8 +29,8 @@ def prova_final():
         except ValueError:
             mensagem_erro('Digite uma nota válida')
 
-    # Função para nota da recuperação
-def recuperação():
+    # Nota da recuperação
+def recuperação(media_baixa):
     while True:
         try:
             nota_r = float(input('Nota da recuperação: '))
@@ -44,6 +44,7 @@ def recuperação():
         except ValueError:
             mensagem_erro(mensagem_erro('Digite uma nota válida'))
 
+    # Nota; Média alta; Média baixa
 while True:
     try:
         nota = float(input('Nota: '))
@@ -79,12 +80,12 @@ if nota >= media_alta:
 elif nota >= media_baixa:
     print('Fazer prova final!')
     sim_não()
-    if not prova_final():
+    if not prova_final(media_baixa):
         print('Fazer recuperação!')
         sim_não()
-        recuperação()
+        recuperação(media_baixa)
 else:
     print('Fazer recuperação!')
     sim_não()
-    recuperação()
+    recuperação(media_baixa)
 # -------------------[Exercício] Aula 3
