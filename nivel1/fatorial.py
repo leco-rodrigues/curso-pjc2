@@ -9,6 +9,7 @@ while True:
         number = int(input('Digite um número: '))
         if number > 1:
             break
+        mensagem_erro()
     except ValueError:
         mensagem_erro()
    # Váriável cópia para o valor original não ser alterado
