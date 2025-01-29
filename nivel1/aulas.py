@@ -226,3 +226,45 @@
 # texto = "788757893.9"
 # print(texto.isdigit())
 # ---------------------- Aula 8
+
+# "mensagem.txt"
+# Increva-se no canal Programação Dinâmica
+#
+#
+# "arquivos.py"
+# arquivo = open("mensagem.txt", "r")
+# msg = arquivo.read()
+# arquivo.close()
+# print(msg)
+#
+# caminho = "C:\Users\Usuario\Documents\MeusProjetos\pjc2\nivel1\mensagem.txt"
+# with open(canubgi, 'r') as arq:
+#     m = arq.read()
+# print("---------")
+# print(m)
+#
+# msg = "A nota de Matemática foi 9.0"
+# with open("mensagem.txt", "w") as arquivo:
+#     arquivo.write(msg)
+#
+# adicionando de forma "fake"
+# with open(caminho) as aqr:
+#     conteudo = arq.read()
+#
+# conteudo = conteudo + "\nA nota de História foi 9.7"
+#
+# with open(caminho, 'w') as arq:
+#     arq.write(conteudo)
+#
+#
+# "exportanotas.py"
+# disciplinas = ("matemática", "português", "filosofia", "história", "física", "geografia", "química", "biologia")
+# notas = [7.8, 8.2, 9.5, 5.7, 9.8, 10, 6.4, 7.0]
+#
+# conteudo = ""
+# for i in (len(notas)):
+#     conteudo = (conteudo + f"A nota da {disciplinas[i]} foi {notas[i]}\n")
+#
+# with open("boletim.txt", "a") as arq:
+#     arq.write(conteudo)
+# ----------------------- Aula 9
