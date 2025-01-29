@@ -1,3 +1,7 @@
+"""!!!CONTEÚDO COPIADO DIRETAMENTE DOS VÍDEOS DO CURSO Python do Jeito Certo 2.0,
+ DO CANAL Programação Dinâmica!!!"""
+
+
 # "ola.py"
 # print("Olá Mundo")
 # ------------------ Aula 0
@@ -187,3 +191,38 @@
 #     if n == 5:
 #         break
 # ------------- Aula 7
+
+
+# "proctext.py"
+# acesso por índice
+# print(texto[-1])
+# print(texto[len(texto) -1])
+# print("-----------")
+# repeticao com for
+# for c in texto:
+#     print(c)
+# print("-----------")
+#
+# Comparações entre strings
+# print("Matemática" == texto)
+# print(texto.upper())
+# print("Matemática".upper() == texto.upper())
+# print(texto.lower())
+# print("Matemática".lower() == texto.lower())
+#
+# Verificar se está contida
+# texto = " matemática  "
+# frase = "A nota de Matemática de Pedro foi 7.8"
+# if texto.lower(),strip() in frase.lower():
+#     print("Achou", texto)
+# else:
+#     print("Não tá aqui")
+# Particionar uma string
+# partes = frase.split('m')
+# print(partes)
+#
+#
+# "ehfloat.py"
+# texto = "788757893.9"
+# print(texto.isdigit())
+# ---------------------- Aula 8
