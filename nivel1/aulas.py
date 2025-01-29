@@ -2,10 +2,6 @@
  DO CANAL Programação Dinâmica!!!"""
 
 
-"""!!!CONTEÚDO COPIADO DIRETAMENTE DOS VÍDEOS DO CURSO Python do Jeito Certo 2.0,
- DO CANAL Programação Dinâmica!!!"""
-
-
 # "ola.py"
 # print("Olá Mundo")
 # ------------------ Aula 0
