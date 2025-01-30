@@ -28,3 +28,16 @@ if formar_triangulo(a, b, c):
 else:
     print('Não é possível formar um triângulo...')
 # ------------------------------------------------ [Exercício] Aula 10
+
+
+# def triangulo_verdadeiro(a, b, c):
+#     if a <= 0 or b <= 0 or c <= 0:
+#         return False
+#     if a > (b + c):
+#         return False
+#     if b > (a + c):
+#         return False
+#     if c > (a + b):
+#         return False
+#     return True
+# --------------- (Resolução) [Exercício] Aula 10
