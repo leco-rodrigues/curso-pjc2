@@ -30,6 +30,13 @@
 # ----------------- Aula 10
 
 
+# "lados.txt"
+# 3 4 5
+# 10 4 5
+# 1 8 7
+# 6 8 7
+#
+#
 # "escrevertriangulo.py"
 # def triangulo_verdadeiro(a, b, c):
 #     if a <= 0 or b <= 0 or c <= 0:
@@ -60,3 +67,52 @@
 #     for resp in respostas:
 #         arq.write(f"{resp}\n")
 # ------------------------------ Aula 11
+
+
+# "triangulos.py"
+# def triangulo_verdadeiro(a, b, c):
+#     if a <= 0 or b <= 0 or c <= 0:
+#         return False
+#     if a > (b + c):
+#         return False
+#     if b > (a + c):
+#         return False
+#     if c > (a + b):
+#         return False
+#     return True
+#
+#
+# "escrevertriangulo.py"
+# import triangulos as tri
+#
+# with open("data/lados.txt", "r") as arq:
+#     linhas = arq.readlines()
+# respostas = []
+# for linha in linhas:
+#     partes = linha.strip().split()
+#     # convertendo cada parte para float
+#     for i in range(len(partes)):
+#         partes[i] = float(partes[i])
+#     resposta = triangulos.triangulo_valido(partes[0], partes[1], partes[2])
+#     if resposta:
+#         respostas.append("SIM")
+#     else:
+#         respostas.append("NÃO")
+#
+# with open("resposta-triangulos.txt", "w") as arq:
+#     for resp in respostas:
+#         arq.write(f"{resp}\n")
+#
+#
+# "respondetriangulo.py"
+# from triangulos import triangulo_valido
+#
+# a = float(input("Digite um valor de um lado: "))
+# b = float(input("Digite um valor de um lado: "))
+# c = float(input("Digite um valor de um lado: "))
+#
+# if triangulo_valido(a, b, c):
+#     print(f"{a}, {b} e {c} formam um triângulo VÁLIDO!")
+# else:
+#     print(f"{a}, {b} e {c} NÃO formam um triângulo VÁLIDO!")
+# ------------------------------------------------------------ Aula 12
