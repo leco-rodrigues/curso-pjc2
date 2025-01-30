@@ -40,4 +40,13 @@ else:
 #     if c > (a + b):
 #         return False
 #     return True
-# --------------- (Resolução) [Exercício] Aula 10
+#
+# a = float(input("Digite um valor de um lado: "))
+# b = float(input("Digite um valor de um lado: "))
+# c = float(input("Digite um valor de um lado: "))
+#
+# if triangulo_valido(a, b, c):
+#     print(f"{a}, {b} e {c} formam um triângulo válido")
+# else:
+#     print(f"{a}, {b} e {c} NÃO formam um triângulo válido")
+# ----------------------------------------------------------- (Resolução) [Exercício] Aula 10
