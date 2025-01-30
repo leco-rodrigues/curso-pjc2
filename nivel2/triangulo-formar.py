@@ -1,6 +1,6 @@
 # Criar uma função, com três parâmetros, que diga se é possível formar um triângulo
 
-# Passo 1: Criar a função 
+# Passo 1: Criar ou importar a função 
 def formar_triangulo(a, b, c):
     if a + b > c and a + c > b and b + c > a:
         return True
