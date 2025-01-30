@@ -46,7 +46,7 @@ else:
 # c = float(input("Digite um valor de um lado: "))
 #
 # if triangulo_valido(a, b, c):
-#     print(f"{a}, {b} e {c} formam um triângulo válido")
+#     print(f"{a}, {b} e {c} formam um triângulo VÁLIDO!")
 # else:
-#     print(f"{a}, {b} e {c} NÃO formam um triângulo válido")
+#     print(f"{a}, {b} e {c} NÃO formam um triângulo VÁLIDO!")
 # ----------------------------------------------------------- (Resolução) [Exercício] Aula 10
