@@ -1,6 +1,6 @@
 # Criar uma função, com três parâmetros, que diga se é possível formar um triângulo
 
-# Passo 1: Criar ou importar a função 
+# Passo 1: Criar ou importar a função
 def formar_triangulo(a, b, c):
     if a + b > c and a + c > b and b + c > a:
         return True
@@ -8,7 +8,7 @@ def formar_triangulo(a, b, c):
 
 # Passo 2: Receber os argumentos
     # Função para otimizar o processo
-def lado_triangulo(a = 'Insira um valor para um dos lados do triângulo: '):
+def lado_triangulo(a = 'Insira um valor para um dos lados do triângulo: '): # Frase pode ser modificada
     while True:
         try:
             lado = int(input(a).strip())
