@@ -116,3 +116,35 @@
 # else:
 #     print(f"{a}, {b} e {c} NÃO formam um triângulo VÁLIDO!")
 # ------------------------------------------------------------ Aula 12
+
+
+# "caminhos.py"
+# import os
+# absoluto = "/Users/Usuario/Documents/MeusProjetos/pjc2/nivel2/aulas2.py"
+# relativo = "nivel2/aulas2.py"
+#
+# DATA_DIR = "data"
+# print(os.path.abspath(DATA_DIR))
+#
+# caminho = os.path.join(os.path.abspath(DATA_DIR)), "lados.txt")
+# print(caminho)
+#
+# print(os.listdir("nivel2"))
+#
+# modulos_python = []
+# for nome in os.listdir("nivel2"):
+#     if nome.endwith(".py")
+#         modulos_python.append(nome)
+# print(modulos_python)
+#
+# print(os.path.join(os.path.abspath('.'), 'data', 'lados.txt))
+#
+# OUTPUT_DIR = "saidas"
+# nomearquivos "mensagem.txt"
+#
+# if not os.path.exists(OUTPUT_DIR):
+#     os.makedirs(OUTPUT_DIR)
+#
+# with open(os.path.join(OUTPUT_DIR, nomearquivo), 'w') as arq:
+#     arq.write("Inscreva-se no canal Programação Dinâmica")
+# ---------------------------------------------------------- Aula 13
