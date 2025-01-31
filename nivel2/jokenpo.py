@@ -2,11 +2,11 @@ import jokenpo_utils as jkp
 
 
 jogadores = []
-J1 = jkp.insert_name('Jogador 1, insira o seu nome: ')
-J2 = jkp.insert_name('Jogador 2, insira o seu nome: ')
+J1 = jkp.inserir_nome('Jogador 1, insira o seu nome: ')
+J2 = jkp.inserir_nome('Jogador 2, insira o seu nome: ')
 jogadores.append(J1)
 jogadores.append(J2)
-escolhas = jkp.request_escolhas(jogadores)
+escolhas = jkp.requisitar_escolhas(jogadores)
 
 EMPATE = 0
 VITORIA_J1 = 1
