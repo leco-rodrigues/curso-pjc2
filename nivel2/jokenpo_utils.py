@@ -1,69 +1,68 @@
 from getpass import getpass
 
 
-def insert_name(player = 'Insira seu nome: '):
+def inserir_nome(jogador = 'Insira seu nome: '):
     while True:
-        name = input(player).strip()
-        if name and all(char.isalpha() or char.isnumeric() or char.isspace() for char in name):
-            return name[:10].strip()
+        nome = input(jogador).strip()
+        if nome and all(caractere.isalpha() or caractere.isnumeric() or caractere.isspace() for caractere in nome):
+            return nome[:10].strip()
         else:
             print('Por favor, utilize apenas letras e números.')
 
-def extra_player():
+def jogador_extra():
     while True:
-        answer = input('Deseja adicionar mais um(a) jogador(a) (s/n)? ').lower().strip()
-        if answer in ['s', 'sim']:
-            jogador_extra = insert_name('Jogador 3, insira o seu nome: ')
+        resposta = input('Deseja adicionar mais um(a) jogador(a) (s/n)? ').lower().strip()
+        if resposta in ['s', 'sim']:
+            jogador_extra = inserir_nome('Jogador 3, insira o seu nome: ')
             return jogador_extra
-        elif answer in ['n', 'não']:
+        elif resposta in ['n', 'não']:
             return False
         else:
             print('Por favor, digite "Sim" ou "Não".')
 
-def process_choice(choice):
+def process_escolha(escolha):
     while True:
-        choice = getpass(f'Jogador - Escolha "pedra", "papel" ou "tesoura": ')
-        if choice.lower().strip() in ['pedra', 'papel', 'tesoura']:
-            return choice.lower().strip()
+        escolha = getpass(escolha)
+        if escolha.lower().strip() in ['pedra', 'papel', 'tesoura']:
+            return escolha.lower().strip()
         else:
             print('Por favor, escolha "pedra", "papel" ou "tesoura".')
 
-def request_choices():
-    choices = []
-    choice = None
-    players = ['J1' , 'J2']
-    J3 = extra_player()
+def requisitar_escolhas(jogadores = []):
+    escolhas = []
+    escolha = None
+    J3 = jogador_extra()
     if J3:
-        players.append(J3)
-    for i in players:
-        choice = process_choice(choice)
-        choices.append(choice)
-    return choices
+        jogadores.append(J3)
+    for i, nome in enumerate(jogadores):
+        escolha = process_escolha(f'{jogadores[i]}, escolha "pedra", "papel" ou "tesoura": ')
+        escolhas.append(escolha)
+    return escolhas
 
-def jokenpo_2P(player1, player2):
-    if player1 == player2:
+def jokenpo_2P(jogador1, jogador2):
+    if jogador1 == jogador2:
         return 0
-    elif ((player1 == 'pedra' and player2 == 'tesoura') or
-          (player1 == 'papel' and player2 == 'pedra') or
-          (player1 == 'tesoura' and player2 == 'papel')):
+    elif ((jogador1 == 'pedra' and jogador2 == 'tesoura') or
+          (jogador1 == 'papel' and jogador2 == 'pedra') or
+          (jogador1 == 'tesoura' and jogador2 == 'papel')):
         return 1
     else:
         return 2
 
-def jokenpo_3P(player1, player2, player3):
-    if ((player1 == player2 == player3) or (player1 != player2 != player3)):
+def jokenpo_3P(jogador1, jogador2, jogador3):
+    if ((jogador1 == jogador2 == jogador3) or (jogador1 != jogador2 != jogador3)):
         return 0
-    elif ((player1 == 'pedra' and player2 == 'tesoura' and player3 == 'tesoura') or
-        (player1 == 'papel' and player2 == 'pedra' and player3 == 'pedra') or
-        (player1 == 'tesoura' and player2 == 'papel' and player3 == 'papel')):
+    elif ((jogador1 == 'pedra' and jogador2 == 'tesoura' and jogador3 == 'tesoura') or
+        (jogador1 == 'papel' and jogador2 == 'pedra' and jogador3 == 'pedra') or
+        (jogador1 == 'tesoura' and jogador2 == 'papel' and jogador3 == 'papel')):
         return 1
-    elif ((player2 == 'pedra' and player1 == 'tesoura' and player3 == 'tesoura') or
-        (player2 == 'papel' and player1 == 'pedra' and player3 == 'pedra') or
-        (player2 == 'tesoura' and player1 == 'papel' and player3 == 'papel')):
+    elif ((jogador2 == 'pedra' and jogador1 == 'tesoura' and jogador3 == 'tesoura') or
+        (jogador2 == 'papel' and jogador1 == 'pedra' and jogador3 == 'pedra') or
+        (jogador2 == 'tesoura' and jogador1 == 'papel' and jogador3 == 'papel')):
         return 2
-    elif ((player3 == 'pedra' and player1 == 'tesoura' and player2 == 'tesoura') or
-        (player3 == 'papel' and player1 == 'pedra' and player2 == 'pedra') or
-        (player3 == 'tesoura' and player1 == 'papel' and player2 == 'papel')):
+    elif ((jogador3 == 'pedra' and jogador1 == 'tesoura' and jogador2 == 'tesoura') or
+        (jogador3 == 'papel' and jogador1 == 'pedra' and jogador2 == 'pedra') or
+        (jogador3 == 'tesoura' and jogador1 == 'papel' and jogador2 == 'papel')):
         return 3
     else:
         return

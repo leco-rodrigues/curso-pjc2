@@ -1,36 +1,39 @@
 import jokenpo_utils as jkp
 
 
-DRAW = 0
-VICTORY_1 = 1
-VICTORY_2 = 2
-VICTORY_3 = 3
+jogadores = []
 J1 = jkp.insert_name('Jogador 1, insira o seu nome: ')
 J2 = jkp.insert_name('Jogador 2, insira o seu nome: ')
-choices = jkp.request_choices()
+jogadores.append(J1)
+jogadores.append(J2)
+escolhas = jkp.request_escolhas(jogadores)
 
-if range(len(choices)) == range(2):
-    result = jkp.jokenpo_2P(choices[0], choices[1])
-    for i, choice in enumerate(choices):
-        print(f'Jogador {i + 1}: {choice}.')
-    if result == DRAW:
+EMPATE = 0
+VITORIA_J1 = 1
+VITORIA_J2 = 2
+VITORIA_J3 = 3
+if range(len(escolhas)) == range(2):
+    resultado = jkp.jokenpo_2P(escolhas[0], escolhas[1])
+    for i, escolha in enumerate(escolhas):
+        print(f'{jogadores[i]}: {escolha}.')
+    if resultado == EMPATE:
         print('Empate!')
-    elif result == VICTORY_1:
-        print('Jogador 1 venceu!')
+    elif resultado == VITORIA_J1:
+        print(f'{jogadores[0]} venceu!')
     else:
-        print('Jogador 2 venceu!')        
+        print(f'{jogadores[1]} venceu!')        
 else:
-    result = jkp.jokenpo_3P(choices[0], choices[1], choices[2])
-    for i, choice in enumerate(choices):
-        print(f'Jogador {i + 1}: {choice}.')
-    if result == DRAW:
+    resultado = jkp.jokenpo_3P(escolhas[0], escolhas[1], escolhas[2])
+    for i, escolha in enumerate(escolhas):
+        print(f'{jogadores[i]}: {escolha}.')
+    if resultado == EMPATE:
         print('Empate!')
-    elif result == VICTORY_1:
-        print('Jogador 1 venceu!')
-    elif result == VICTORY_2:
-        print('Jogador 2 venceu!')
-    elif result == VICTORY_3:
-        print('Jogador 3 venceu!')
+    elif resultado == VITORIA_J1:
+        print(f'{jogadores[0]} venceu!')
+    elif resultado == VITORIA_J2:
+        print(f'{jogadores[1]} venceu!')
+    elif resultado == VITORIA_J3:
+        print(f'{jogadores[2]} venceu!')
     else:
         print('Ninguém venceu!')
 # ------------------------------ [Exercício] Aula 14
