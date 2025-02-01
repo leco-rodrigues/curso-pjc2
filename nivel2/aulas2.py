@@ -1,5 +1,5 @@
 """!!!CONTEÚDO COPIADO DIRETAMENTE DOS VÍDEOS DO CURSO Python do Jeito Certo 2.0,
- DO CANAL Programação Dinâmica!!!"""
+ DO CANAL DO YOUTUBE Programação Dinâmica!!!"""
 
 
 # "funcoes.py"
@@ -191,3 +191,26 @@
 # else:
 #     print("JOGADOR 2 venceu!")
 # ------------------------------ Aula 14
+
+
+# - Aula 15
+
+
+# - Aula 16
+
+
+# - Aula 17
+
+
+# pip freeze
+# pip install pillow
+# pip freeze
+# pip unistall pillow
+# pip install pillow
+# pip freeze > requirements.txt
+# pip install -r requirements.txt
+# "testpip.py"
+# from PIL import image
+# img = Image.open("C:/Users/Usuario/Pictures/print.png")
+# img.show()
+# - Aula 18

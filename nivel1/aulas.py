@@ -1,5 +1,5 @@
 """!!!CONTEÚDO COPIADO DIRETAMENTE DOS VÍDEOS DO CURSO Python do Jeito Certo 2.0,
- DO CANAL Programação Dinâmica!!!"""
+ DO CANAL DO YOUTUBE Programação Dinâmica!!!"""
 
 
 # "ola.py"
