@@ -1,2 +1,2 @@
-# PJC2
- Repositório que eu criei durante o curso Python do Jeito Certo 2.0
+# _*Insira um título aqui*_
+ Alguns exercícios que fiz durante o curso.
