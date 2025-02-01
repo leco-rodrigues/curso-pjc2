@@ -1,2 +1,2 @@
 # PJC2
- _*Insira uma descrição aqui*_
+ Aqui tem alguns exercícios que fiz durante o curso.
