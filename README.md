@@ -1,2 +1,2 @@
-# _*Insira um título aqui*_
+# Curso Python do Jeito Certo 2.0
  Alguns exercícios que fiz durante o curso.
